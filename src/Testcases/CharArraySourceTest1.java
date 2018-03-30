@@ -14,7 +14,7 @@ public class CharArraySourceTest1 {
 		CharArraySource chartest = new CharArraySource(data,0,4);
 		
 		int result1 = chartest.read(data, 2, 4);
-		assertNotEquals(result1,-1);
+		assertEquals(result1,-1);
 	}
 
 }
