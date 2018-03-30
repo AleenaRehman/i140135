@@ -17,7 +17,7 @@ public class FailTest1 {
 		assertEquals(result1,-1);
 		
 		char result2 = chartest.charAt(3);
-		assertNotEquals(result2,data[3]);
+		assertEquals(result2,data[3]);
 		
 		int result3 = chartest.length();
 		assertNotEquals(result3,0);
