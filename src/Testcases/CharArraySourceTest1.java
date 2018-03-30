@@ -2,6 +2,7 @@ package Testcases;
 
 
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class CharArraySourceTest1 {
 		
 		int result1 = chartest.read(data, 2, 4);
 
-(result1,-1);
+		assertNotEquals(result1,-1);
 	}
 
 }
