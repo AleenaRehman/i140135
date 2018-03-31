@@ -358,7 +358,6 @@
               	    <sequential>
               	      <javac  deprecation="on" 
               	              srcdir="@{sourcepath.root}" 
-              	              destdir="classes" 
               	              includes="@{compile.files}"
               	              >
               	        <classpath  refid="@{classpath.id}"/>
