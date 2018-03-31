@@ -347,7 +347,7 @@
 
                 <!-- Target: compile -->
                 <target name="complie" depends="prepare">
-              	    <javac srcdir="=${src}" destdir="${build}"/>
+              	    <javac srcdir="=${src}" destdir="${bin}"/>
                 </target>
 
               	<macrodef name="doCompile">
