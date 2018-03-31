@@ -332,6 +332,11 @@
     <target name="clean">
         <delete dir="bin"/>
     </target>
+    
+    <!-- Target: compile -->
+    <target name="compile" >
+          <doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
+     </target>
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
     <target name="build-subprojects"/>
