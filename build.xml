@@ -345,8 +345,26 @@
     </target>
               	
 
-                
+                <!-- Target: compile -->
+                <target name="complie" depends="prepare">
+                  <doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
+                </target>
 
+              	<macrodef name="doCompile">
+              	    <attribute name="sourcepath.root" description="Pattern for the source root directories."/>
+              	    <attribute name="compile.files"   description="Pattern for the files to compile." default="**/*.java"/>
+              	    <attribute name="classpath.id"    description="ID of a path-like structure (see Ant manual) for the class dirs / jar files to use for compilation." default="project.classpath"/>
+              	    <attribute name="compile.debug"   description="Debug switch for the compiler (Ant boolean)." default="off"/>
+              	    <sequential>
+              	      <javac  deprecation="on" 
+              	              srcdir="@{sourcepath.root}" 
+              	              destdir="${classes.dir}" 
+              	              includes="@{compile.files}"
+              	              debug="@{compile.debug}">
+              	        <classpath  refid="@{classpath.id}"/>
+              	      </javac>
+              	    </sequential>
+              	  </macrodef>
               	<target name="compile" depends="init"
               	        description="compile the source">
               	    <!-- Compile the Java code from ${src} into ${build} -->
