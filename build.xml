@@ -329,9 +329,7 @@
             </fileset>
         </copy>
     </target>
-    <target name="clean">
-        <delete dir="bin"/>
-    </target>
+              	
                 <!-- Target: prepare -->
                 <target name="prepare">
                   <mkdir dir="${build.dir}"/>
@@ -340,12 +338,24 @@
                   <mkdir dir="${doc.dir}"/>
                   <mkdir dir="${javadoc.dir}"/>
                 </target>
-    <!-- Target: compile -->
-    <target name="compile" depends="prepare">
-          <doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
-    	
-     </target>
- <!-- Target: javadoc -->
+            	
+              	
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+              	
+
+                <!-- Target: compile -->
+                <target name="compile" depends="prepare">
+                  <doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
+                </target>
+
+                <!-- Target: compile_junit -->
+                <target name="compile_junit" depends="compile">
+                  <doCompile sourcepath.root="${junit.dir}" compile.debug="${context.debug}"/>
+                </target>
+
+                <!-- Target: javadoc -->
                 <target name="javadoc" depends="prepare">
                   <javadoc author="true" 
               	     bottom="Copyright 2001 - 2004 Heiko Blau. All rights reserved." 
@@ -362,6 +372,7 @@
                 <target name="jar" depends="compile">
                   <doJar jar.name="${JTopasLib}" pattern.id="src.pattern"/>
                 </target>
+              	
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
     <target name="build-subprojects"/>
@@ -373,19 +384,6 @@
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-        <copy todir="${ant.library.dir}">
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </copy>
-        <unzip dest="${ant.library.dir}">
-            <patternset includes="jdtCompilerAdapter.jar"/>
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </unzip>
-    </target>
-    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-        <antcall target="build"/>
-    </target>
     <target name=".getKeyword(String)">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
