@@ -360,7 +360,7 @@
               	              srcdir="@{sourcepath.root}" 
               	              destdir="${classes.dir}" 
               	              includes="@{compile.files}"
-              	              debug="@{compile.debug}">
+              	              >
               	        <classpath  refid="@{classpath.id}"/>
               	      </javac>
               	    </sequential>
