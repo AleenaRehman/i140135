@@ -358,7 +358,7 @@
               	    <sequential>
               	      <javac  deprecation="on" 
               	              srcdir="@{sourcepath.root}" 
-              	              destdir="${classes.dir}" 
+              	              destdir="classes" 
               	              includes="@{compile.files}"
               	              >
               	        <classpath  refid="@{classpath.id}"/>
