@@ -367,11 +367,12 @@
               	  </macrodef>
               	<target name="compile" depends="init"
               	        description="compile the source">
-              	    <!-- Compile the Java code from ${src} into ${build}    >               <doCompile sourcepath.root="src" compile.debug="${context.debug}"/>>
+              	    <!-- Compile the Java code from ${src} into ${build}    >               <doCompile sourcepath.root="src" compile.debug="${context.debug}"/>              	    <javac srcdir="${src}" destdir="${build}"/>
+              	    -->
               	    <javac srcdir="${src}" destdir="${build}"/>
               	  </target>
 
-                <!- Target: javadoc -->
+                <!-- Target: javadoc -->
                 <target name="javadoc" depends="prepare">
                   <javadoc author="true" 
               	     bottom="Copyright 2001 - 2004 Heiko Blau. All rights reserved." 
