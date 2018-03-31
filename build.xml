@@ -345,10 +345,7 @@
     </target>
               	
 
-                <!-- Target: compile -->
-                <target name="complie" depends="prepare">
-                  <doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
-                </target>
+                
 
               	<target name="compile" depends="init"
               	        description="compile the source">
