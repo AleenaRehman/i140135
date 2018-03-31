@@ -343,8 +343,7 @@
     <!-- Target: compile -->
     <target name="compile" depends="prepare">
           <doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
-    	<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-    		<antcall target="build"/>
+    	
      </target>
  <!-- Target: javadoc -->
                 <target name="javadoc" depends="prepare">
