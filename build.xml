@@ -332,11 +332,37 @@
     <target name="clean">
         <delete dir="bin"/>
     </target>
-    
+                <!-- Target: prepare -->
+                <target name="prepare">
+                  <mkdir dir="${build.dir}"/>
+                  <mkdir dir="${classes.dir}"/>
+                  <mkdir dir="${lib.dir}"/>
+                  <mkdir dir="${doc.dir}"/>
+                  <mkdir dir="${javadoc.dir}"/>
+                </target>
     <!-- Target: compile -->
-    <target name="compile" >
+    <target name="compile" depends="prepare">
           <doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
+    	<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+    		<antcall target="build"/>
      </target>
+ <!-- Target: javadoc -->
+                <target name="javadoc" depends="prepare">
+                  <javadoc author="true" 
+              	     bottom="Copyright 2001 - 2004 Heiko Blau. All rights reserved." 
+              	     destdir="${javadoc.dir}" 
+              	     packagenames="de.susebox.*" 
+              	     sourcepath="${src.dir}" 
+              	     splitindex="true" 
+              	     use="true" 
+              	     version="true" 
+              	     windowtitle="JTopas - Java tokenizer and parser tools"/>
+                </target>
+
+                <!-- Target: jar -->
+                <target name="jar" depends="compile">
+                  <doJar jar.name="${JTopasLib}" pattern.id="src.pattern"/>
+                </target>
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
     <target name="build-subprojects"/>
