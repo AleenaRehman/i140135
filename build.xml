@@ -369,7 +369,7 @@
               	      </javac>
               	    </sequential>
               	  </macrodef>
-              	<target name="compile" depends="init"
+              	<target name="compiler" depends="init"
               	        description="compile the source">
               	    <!-- Compile the Java code from ${src} into ${build}    >               <doCompile sourcepath.root="src" compile.debug="${context.debug}"/>              	    <javac srcdir="${src}" destdir="${build}"/>
               	    -->
