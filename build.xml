@@ -320,6 +320,7 @@
         <path refid="JTopas1.classpath"/>
     </path>
     <path id="run.TokenTest2.bootclasspath"/>
+              	
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -343,11 +344,14 @@
     <target name="clean">
         <delete dir="bin"/>
     </target>
-              	
+                <target name="compile">
+                    <mkdir dir="build/classes"/>
+                    <javac srcdir="src" destdir="build/classes"/>
+                </target>
 
                 <!-- Target: compile -->
-                <target name="complie" depends="prepare">
-                	<doCompile sourcepath.root="src" compile.debug="${context.debug}"/>
+                <target name="compliea" depends="prepare"> 
+                	<javac srcdir="src" destdir="bin"/>
                 </target>
 
               	<macrodef name="doCompile">
