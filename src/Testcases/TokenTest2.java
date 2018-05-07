@@ -13,6 +13,12 @@ public class TokenTest2 {
 		Token toktest = new Token(2,"token",null);
 		String result = toktest.toString();
 		assertNotEquals(result,null);
+		
+		String res = null;
+		toktest.setImage(res);
+		
+		String[] result1 = toktest.getImageParts();
+		assertNotEquals(result1,null);
 	}
 
 }

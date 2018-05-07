@@ -14,6 +14,9 @@ public class TokenizerPropertyTest1 {
 		TokenizerProperty TP = new TokenizerProperty(3,image);
 		String result = TP.toString();
 		assertNotEquals(result,null);
+		
+		TokenizerProperty TP1 = new TokenizerProperty(3);
+
 	}
 
 }

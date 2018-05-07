@@ -23,6 +23,10 @@ public class StringSourceTests {
 		
 		CharSequence result4 = stringtest.subSequence(1,4);
 		assertEquals(result4,"est");
+		
+		int result5 = stringtest.read(cbuf, 0, -1);
+		assertNotEquals(result5,0);
+		
 	}
 
 }

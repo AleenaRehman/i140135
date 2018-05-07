@@ -15,6 +15,15 @@ public class TokenizerPropertyTest2 {
 		TokenizerProperty TPequal = new TokenizerProperty(3,image);
 		boolean result = TP.equals(TPequal);
 		assertEquals(result,true);
+		
+		TokenizerProperty t = new TokenizerProperty(2);
+		TokenizerProperty t1 = new TokenizerProperty();
+		
+		boolean result1 = t.equals(t1);
+		assertNotEquals(result1,true);
+		 
+		boolean result2 = t.isFlagSet(2, true);
+		assertEquals(result2,true);
 	}
 
 }

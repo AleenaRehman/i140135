@@ -16,7 +16,15 @@ public class TokenTest1 {
 		boolean result1 = toktest.equals(toktestequal);
 		assertEquals(result1,true);
 		
+		Token t = new Token(2);
+		Token ts = new Token(1,"token");
+		boolean result = t.equals(ts);
+		assertEquals(result,false);
 		
+		Token t1 = new Token();
+		t1.setEndPosition(1);
+		int result2 = t1.getEndPosition();
+		assertNotEquals(result2,1);
 	}
 
 }
