@@ -350,7 +350,7 @@
                 </target>-->
               	<!--  Target: compile  -->
               	<target name="compile" depends="prepare">
-              	<doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
+              	<doCompile sourcepath.root="src" compile.debug="${context.debug}"/>
               	</target>
 
                 <!-- Target: compile -->
