@@ -344,10 +344,14 @@
     <target name="clean">
         <delete dir="bin"/>
     </target>
-                <target name="compile">
+                <!--target name="compile">
                     <mkdir dir="build/classes"/>
                     <javac srcdir="src" destdir="build/classes"/>
-                </target>
+                </target>-->
+              	<!--  Target: compile  -->
+              	<target name="compile" depends="prepare">
+              	<doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
+              	</target>
 
                 <!-- Target: compile -->
                 <target name="compliea" depends="prepare"> 
