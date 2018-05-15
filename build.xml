@@ -1,1136 +1,274 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="JTopas1">
-    <property environment="env"/>
-    <property name="src.link" value="D:/Documents/BSCS/Semester 8/Software Testing/Assignments/jtopas/src"/>
-    <property name="JRE_LIB" value="../../../../../Program Files/Java/jre1.8.0_101/lib/rt.jar"/>
-    <property name="junit.output.dir" value="junit"/>
-    <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.8"/>
-    <property name="source" value="1.8"/>
-    <path id="JUnit 4.libraryclasspath">
-        <pathelement location="../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
-    </path>
-    <path id="JTopas1.classpath">
-        <pathelement location="bin"/>
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JUnit 4.libraryclasspath"/>
-    </path>
-    <path id="run..getKeyword(String).classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run..getKeyword(String).bootclasspath"/>
-    <path id="run.allCoverage.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.allCoverage.bootclasspath"/>
-    <path id="run.ALLNewTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ALLNewTest.bootclasspath"/>
-    <path id="run.AllTests.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.AllTests.bootclasspath"/>
-    <path id="run.AllTests1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.AllTests1.bootclasspath"/>
-    <path id="run.AllTests_pP.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.AllTests_pP.bootclasspath"/>
-    <path id="run.CharArraySourceTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.CharArraySourceTest1.bootclasspath"/>
-    <path id="run.CharArraySourceTests.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.CharArraySourceTests.bootclasspath"/>
-    <path id="run.ExtExceptionsTestSuite.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ExtExceptionsTestSuite.bootclasspath"/>
-    <path id="run.ExtIllegalArgumentExceptionTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ExtIllegalArgumentExceptionTest.bootclasspath"/>
-    <path id="run.ExtIndexOutOfBoundsExceptionTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ExtIndexOutOfBoundsExceptionTest.bootclasspath"/>
-    <path id="run.ExtIOExceptionTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ExtIOExceptionTest.bootclasspath"/>
-    <path id="run.ExtNoSuchElementExceptionTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ExtNoSuchElementExceptionTest1.bootclasspath"/>
-    <path id="run.ExtNoSuchMethodExceptionTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ExtNoSuchMethodExceptionTest.bootclasspath"/>
-    <path id="run.ExtNullPointerExceptionTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ExtNullPointerExceptionTest.bootclasspath"/>
-    <path id="run.ExtRuntimeExceptionTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ExtRuntimeExceptionTest.bootclasspath"/>
-    <path id="run.ExtUnsuppoertedOperationExceptionTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.ExtUnsuppoertedOperationExceptionTest.bootclasspath"/>
-    <path id="run.FailTests.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.FailTests.bootclasspath"/>
-    <path id="run.JtopassTestSuit.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.JtopassTestSuit.bootclasspath"/>
-    <path id="run.NCSST2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.NCSST2.bootclasspath"/>
-    <path id="run.NoCaseSequenceStoreTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.NoCaseSequenceStoreTest.bootclasspath"/>
-    <path id="run.NoCaseSequenceStoreTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.NoCaseSequenceStoreTest1.bootclasspath"/>
-    <path id="run.NoCaseSequenceStoreTest2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.NoCaseSequenceStoreTest2.bootclasspath"/>
-    <path id="run.NoCaseSequenceStoreTestSuite.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.NoCaseSequenceStoreTestSuite.bootclasspath"/>
-    <path id="run.PatternMatcherTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.PatternMatcherTest1.bootclasspath"/>
-    <path id="run.SecquenceStoreTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SecquenceStoreTest1.bootclasspath"/>
-    <path id="run.SequenceStorageTest3.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SequenceStorageTest3.bootclasspath"/>
-    <path id="run.SequenceStoreTest2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SequenceStoreTest2.bootclasspath"/>
-    <path id="run.SequenceStoreTest3.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SequenceStoreTest3.bootclasspath"/>
-    <path id="run.SequenceStoreTest4.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SequenceStoreTest4.bootclasspath"/>
-    <path id="run.SequenceStoreTest5.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SequenceStoreTest5.bootclasspath"/>
-    <path id="run.SequenceStoreTest6.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SequenceStoreTest6.bootclasspath"/>
-    <path id="run.SequenceStoreTest7.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SequenceStoreTest7.bootclasspath"/>
-    <path id="run.SequenceStoreTest8.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SequenceStoreTest8.bootclasspath"/>
-    <path id="run.SequenceStoreTestSuite.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.SequenceStoreTestSuite.bootclasspath"/>
-    <path id="run.StandardKeywordHandlerTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardKeywordHandlerTest1.bootclasspath"/>
-    <path id="run.StandardKeywordHandlerTest2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardKeywordHandlerTest2.bootclasspath"/>
-    <path id="run.StandardKeywordHandlerTestSuite.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardKeywordHandlerTestSuite.bootclasspath"/>
-    <path id="run.StandardSepratorHandlerTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardSepratorHandlerTest1.bootclasspath"/>
-    <path id="run.StandardSepratorHandlerTestSuite.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardSepratorHandlerTestSuite.bootclasspath"/>
-    <path id="run.StandardSepratorTestSuite.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardSepratorTestSuite.bootclasspath"/>
-    <path id="run.StandardSequenceHandlerTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardSequenceHandlerTest1.bootclasspath"/>
-    <path id="run.StandardSequenceHandlerTest2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardSequenceHandlerTest2.bootclasspath"/>
-    <path id="run.StandardSequenceHandlerTest3.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardSequenceHandlerTest3.bootclasspath"/>
-    <path id="run.StandardSequenceHandlerTestSuite.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardSequenceHandlerTestSuite.bootclasspath"/>
-    <path id="run.StandardTokenizerPropertiesTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardTokenizerPropertiesTest1.bootclasspath"/>
-    <path id="run.StandardTokenizerPropertiesTest2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardTokenizerPropertiesTest2.bootclasspath"/>
-    <path id="run.StandardTokenizerTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardTokenizerTest1.bootclasspath"/>
-    <path id="run.StandardWhiteSpaceHandlerTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardWhiteSpaceHandlerTest1.bootclasspath"/>
-    <path id="run.StandardWhiteSpaceHandlerTest2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardWhiteSpaceHandlerTest2.bootclasspath"/>
-    <path id="run.StandardWhiteSpaceHandlerTest3.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardWhiteSpaceHandlerTest3.bootclasspath"/>
-    <path id="run.StandardWhiteSpaceHandlerTestSuite.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StandardWhiteSpaceHandlerTestSuite.bootclasspath"/>
-    <path id="run.StringSourceTest.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StringSourceTest.bootclasspath"/>
-    <path id="run.StringSourceTest2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.StringSourceTest2.bootclasspath"/>
-    <path id="run.TokenizerPropertyTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.TokenizerPropertyTest1.bootclasspath"/>
-    <path id="run.TokenizerPropertyTest2 (1).classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.TokenizerPropertyTest2 (1).bootclasspath"/>
-    <path id="run.TokenizerPropertyTest2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.TokenizerPropertyTest2.bootclasspath"/>
-    <path id="run.TokenSuite.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.TokenSuite.bootclasspath"/>
-    <path id="run.TokenTest1.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.TokenTest1.bootclasspath"/>
-    <path id="run.TokenTest2.classpath">
-        <pathelement location="${JRE_LIB}"/>
-        <path refid="JTopas1.classpath"/>
-    </path>
-    <path id="run.TokenTest2.bootclasspath"/>
-              	
-    <target name="init">
-        <mkdir dir="bin"/>
-        <copy includeemptydirs="false" todir="bin">
-            <fileset dir="${src.link}">
-                <exclude name="**/*.launch"/>
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
-    </target>
-              	
-                <!-- Target: prepare -->
-                <target name="prepare">
-                  <mkdir dir="${build.dir}"/>
-                  <mkdir dir="${classes.dir}"/>
-                  <mkdir dir="${lib.dir}"/>
-                  <mkdir dir="${doc.dir}"/>
-                  <mkdir dir="${javadoc.dir}"/>
-                </target>
-            	
-              	
-    <target name="clean">
-        <delete dir="bin"/>
-    </target>
-                <target name="compile">
-                    <mkdir dir="build/classes"/>
-                    <javac srcdir="src" destdir="build/classes"/>
-                </target>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  JTopas - Java tokenizer and parser tools
 
-                <!-- Target: compile -->
-                <target name="compliea" depends="prepare"> 
-                	<javac srcdir="src" destdir="bin"/>
-                </target>
+  Build file used by the Jakarta Ant utility.
+  Visit: http://jakarta.apache.org
 
-              	<macrodef name="doCompile">
-              	    <attribute name="sourcepath.root" description="Pattern for the source root directories."/>
-              	    <attribute name="compile.files"   description="Pattern for the files to compile." default="**/*.java"/>
-              	    <attribute name="classpath.id"    description="ID of a path-like structure (see Ant manual) for the class dirs / jar files to use for compilation." default="project.classpath"/>
-              	    <attribute name="compile.debug"   description="Debug switch for the compiler (Ant boolean)." default="off"/>
-              	    <sequential>
-              	      <javac  deprecation="on" 
-              	              srcdir="@{sourcepath.root}" 
-              	              destdir="@{classes.dir}" 
-              	              includes="@{compile.files}"
-              	              >
-              	        <classpath  refid="@{classpath.id}"/>
-              	      </javac>
-              	    </sequential>
-              	  </macrodef>
-              	<target name="compiler" depends="init"
-              	        description="compile the source">
-              	    <!-- Compile the Java code from ${src} into ${build}    >               <doCompile sourcepath.root="src" compile.debug="${context.debug}"/>              	    <javac srcdir="${src}" destdir="${build}"/>
-              	    -->
-              	    <javac srcdir="${src}" destdir="${build}"/>
-              	  </target>
+  Remarks:
+    1. To build the target "compile_junit" You need to have the 
+       junit.jar archive in Your CLASSPATH environment variable
+-->
+<project basedir="." default="help" name="JTopas">
+  <javac srcdir="src" destdir="bin" />
+  <!-- Target Names -->
+  <property name="project.archive" value="jtopas"/>
+  <property name="project.version" value="0.8"/>
+  <property name="JTopasLib"       value="jtopas"/>
+  <property name="JTopas-JTLib"    value="jtopas-jt"/>
 
-                <!-- Target: javadoc -->
-                <target name="javadoc" depends="prepare">
-                  <javadoc author="true" 
-              	     bottom="Copyright 2001 - 2004 Heiko Blau. All rights reserved." 
-              	     destdir="${javadoc.dir}" 
-              	     packagenames="de.susebox.*" 
-              	     sourcepath="${src.dir}" 
-              	     splitindex="true" 
-              	     use="true" 
-              	     version="true" 
-              	     windowtitle="JTopas - Java tokenizer and parser tools"/>
-                </target>
+  <!-- Structure Property Definitions -->
+  <property name="src.dir"      value="src"/>
+  <property name="junit.dir"    value="junit"/>
+  <property name="build.dir"    value="build"/>
+  <property name="lib.dir"      value="${build.dir}/${ant.java.version}/lib"/>
+  <property name="doc.dir"      value="${build.dir}/doc"/>
+  <property name="javadoc.dir"  value="${doc.dir}/javadoc"/>
+  <property name="classes.dir"  value="${build.dir}/${ant.java.version}/classes"/>
+  <property name="export.dir"   value="/tmp"/>
+  <property name="export.tag"   value=""/>
+  <property name="archive.name" value="${project.archive}-${project.version}"/>
+  <property name="CVSModule"    value="jtopas"/>
+  
+  <!-- JUnit related properties -->
+  <property name="main.class"   value="de.susebox.SuseboxTestSuite"/>
+  <property name="junit.ui"     value="textui"/>
+  
+  <!-- Ant context properties -->
+  <condition property="context.debug" value="on">
+    <isset property="netbeans.home"/>
+  </condition>
+  <condition property="context.debug" value="off">
+    <not><isset property="netbeans.home"/></not>
+  </condition>
+  
+  <!-- File and pattern sets -->
+  <patternset id="src.pattern">
+    <exclude name="**/*Test*"/>
+  </patternset>
+  <patternset id="junit.pattern">
+    <include name="**/*Test*"/>
+  </patternset>
+  
+  <!-- Paths -->
+  <path id="project.classpath">
+    <fileset dir="${lib.dir}"/>
+    <pathelement path="${java.class.path}"/>
+  </path>
 
-                <!-- Target: jar -->
-                <target name="jar" depends="compile">
-                  <doJar jar.name="${JTopasLib}" pattern.id="src.pattern"/>
-                </target>
-              	
-    <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
-    <target name="build-subprojects"/>
-    <target depends="init" name="build-project">
-        <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
-            <src path="${src.link}"/>
-            <classpath refid="JTopas1.classpath"/>
-        </javac>
-    </target>
-    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target name=".getKeyword(String)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardKeywordHandlerTest2.1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run..getKeyword(String).classpath"/>
-            <bootclasspath>
-                <path refid="run..getKeyword(String).bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="allCoverage">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.allCoverage" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.allCoverage.classpath"/>
-            <bootclasspath>
-                <path refid="run.allCoverage.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ALLNewTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ALLNewTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ALLNewTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.ALLNewTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="AllTests">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.AllTests" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.AllTests.classpath"/>
-            <bootclasspath>
-                <path refid="run.AllTests.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="AllTests1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.AllTests1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.AllTests1.classpath"/>
-            <bootclasspath>
-                <path refid="run.AllTests1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="AllTests_pP">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.AllTests_pP" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.AllTests_pP.classpath"/>
-            <bootclasspath>
-                <path refid="run.AllTests_pP.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="CharArraySourceTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.CharArraySourceTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.CharArraySourceTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.CharArraySourceTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="CharArraySourceTests">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.CharArraySourceTests" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.CharArraySourceTests.classpath"/>
-            <bootclasspath>
-                <path refid="run.CharArraySourceTests.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ExtExceptionsTestSuite">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ExtExceptionsTestSuite" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ExtExceptionsTestSuite.classpath"/>
-            <bootclasspath>
-                <path refid="run.ExtExceptionsTestSuite.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ExtIllegalArgumentExceptionTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ExtIllegalArgumentExceptionTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ExtIllegalArgumentExceptionTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.ExtIllegalArgumentExceptionTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ExtIndexOutOfBoundsExceptionTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ExtIndexOutOfBoundsExceptionTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ExtIndexOutOfBoundsExceptionTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.ExtIndexOutOfBoundsExceptionTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ExtIOExceptionTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ExtIOExceptionTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ExtIOExceptionTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.ExtIOExceptionTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ExtNoSuchElementExceptionTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ExtNoSuchElementExceptionTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ExtNoSuchElementExceptionTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.ExtNoSuchElementExceptionTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ExtNoSuchMethodExceptionTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ExtNoSuchMethodExceptionTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ExtNoSuchMethodExceptionTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.ExtNoSuchMethodExceptionTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ExtNullPointerExceptionTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ExtNullPointerExceptionTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ExtNullPointerExceptionTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.ExtNullPointerExceptionTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ExtRuntimeExceptionTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ExtRuntimeExceptionTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ExtRuntimeExceptionTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.ExtRuntimeExceptionTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="ExtUnsuppoertedOperationExceptionTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.ExtUnsuppoertedOperationExceptionTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.ExtUnsuppoertedOperationExceptionTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.ExtUnsuppoertedOperationExceptionTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="FailTests">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.FailTests" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.FailTests.classpath"/>
-            <bootclasspath>
-                <path refid="run.FailTests.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="JtopassTestSuit">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.JtopassTestSuit" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.JtopassTestSuit.classpath"/>
-            <bootclasspath>
-                <path refid="run.JtopassTestSuit.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="NCSST2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.NCSST2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.NCSST2.classpath"/>
-            <bootclasspath>
-                <path refid="run.NCSST2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="NoCaseSequenceStoreTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.NoCaseSequenceStoreTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.NoCaseSequenceStoreTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.NoCaseSequenceStoreTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="NoCaseSequenceStoreTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.NoCaseSequenceStoreTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.NoCaseSequenceStoreTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.NoCaseSequenceStoreTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="NoCaseSequenceStoreTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.NoCaseSequenceStoreTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.NoCaseSequenceStoreTest2.classpath"/>
-            <bootclasspath>
-                <path refid="run.NoCaseSequenceStoreTest2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="NoCaseSequenceStoreTestSuite">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.NoCaseSequenceStoreTestSuite" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.NoCaseSequenceStoreTestSuite.classpath"/>
-            <bootclasspath>
-                <path refid="run.NoCaseSequenceStoreTestSuite.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="PatternMatcherTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.PatternMatcherTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.PatternMatcherTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.PatternMatcherTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SecquenceStoreTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SecquenceStoreTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SecquenceStoreTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.SecquenceStoreTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SequenceStorageTest3">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SequenceStorageTest3" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SequenceStorageTest3.classpath"/>
-            <bootclasspath>
-                <path refid="run.SequenceStorageTest3.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SequenceStoreTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SequenceStoreTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SequenceStoreTest2.classpath"/>
-            <bootclasspath>
-                <path refid="run.SequenceStoreTest2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SequenceStoreTest3">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SequenceStoreTest3" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SequenceStoreTest3.classpath"/>
-            <bootclasspath>
-                <path refid="run.SequenceStoreTest3.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SequenceStoreTest4">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SequenceStoreTest4" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SequenceStoreTest4.classpath"/>
-            <bootclasspath>
-                <path refid="run.SequenceStoreTest4.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SequenceStoreTest5">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SequenceStoreTest5" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SequenceStoreTest5.classpath"/>
-            <bootclasspath>
-                <path refid="run.SequenceStoreTest5.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SequenceStoreTest6">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SequenceStoreTest6" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SequenceStoreTest6.classpath"/>
-            <bootclasspath>
-                <path refid="run.SequenceStoreTest6.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SequenceStoreTest7">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SequenceStoreTest7" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SequenceStoreTest7.classpath"/>
-            <bootclasspath>
-                <path refid="run.SequenceStoreTest7.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SequenceStoreTest8">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SequenceStoreTest8" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SequenceStoreTest8.classpath"/>
-            <bootclasspath>
-                <path refid="run.SequenceStoreTest8.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="SequenceStoreTestSuite">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.SequenceStoreTestSuite" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.SequenceStoreTestSuite.classpath"/>
-            <bootclasspath>
-                <path refid="run.SequenceStoreTestSuite.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardKeywordHandlerTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardKeywordHandlerTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardKeywordHandlerTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardKeywordHandlerTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardKeywordHandlerTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardKeywordHandlerTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardKeywordHandlerTest2.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardKeywordHandlerTest2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardKeywordHandlerTestSuite">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardKeywordHandlerTestSuite" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardKeywordHandlerTestSuite.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardKeywordHandlerTestSuite.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardSepratorHandlerTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardSepratorHandlerTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardSepratorHandlerTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardSepratorHandlerTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardSepratorHandlerTestSuite">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardSepratorHandlerTestSuite" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardSepratorHandlerTestSuite.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardSepratorHandlerTestSuite.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardSepratorTestSuite">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardSepratorTestSuite" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardSepratorTestSuite.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardSepratorTestSuite.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardSequenceHandlerTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardSequenceHandlerTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardSequenceHandlerTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardSequenceHandlerTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardSequenceHandlerTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardSequenceHandlerTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardSequenceHandlerTest2.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardSequenceHandlerTest2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardSequenceHandlerTest3">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardSequenceHandlerTest3" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardSequenceHandlerTest3.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardSequenceHandlerTest3.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardSequenceHandlerTestSuite">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardSequenceHandlerTestSuite" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardSequenceHandlerTestSuite.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardSequenceHandlerTestSuite.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardTokenizerPropertiesTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardTokenizerPropertiesTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardTokenizerPropertiesTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardTokenizerPropertiesTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardTokenizerPropertiesTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardTokenizerPropertiesTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardTokenizerPropertiesTest2.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardTokenizerPropertiesTest2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardTokenizerTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardTokenizerTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardTokenizerTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardTokenizerTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardWhiteSpaceHandlerTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardWhiteSpaceHandlerTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardWhiteSpaceHandlerTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardWhiteSpaceHandlerTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardWhiteSpaceHandlerTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardWhiteSpaceHandlerTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardWhiteSpaceHandlerTest2.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardWhiteSpaceHandlerTest2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardWhiteSpaceHandlerTest3">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardWhiteSpaceHandlerTest3" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardWhiteSpaceHandlerTest3.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardWhiteSpaceHandlerTest3.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StandardWhiteSpaceHandlerTestSuite">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StandardWhiteSpaceHandlerTestSuite" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StandardWhiteSpaceHandlerTestSuite.classpath"/>
-            <bootclasspath>
-                <path refid="run.StandardWhiteSpaceHandlerTestSuite.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StringSourceTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StringSourceTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StringSourceTest.classpath"/>
-            <bootclasspath>
-                <path refid="run.StringSourceTest.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="StringSourceTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.StringSourceTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.StringSourceTest2.classpath"/>
-            <bootclasspath>
-                <path refid="run.StringSourceTest2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="TokenizerPropertyTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.TokenizerPropertyTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.TokenizerPropertyTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.TokenizerPropertyTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="TokenizerPropertyTest2 (1)">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.TokenizerPropertyTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.TokenizerPropertyTest2 (1).classpath"/>
-            <bootclasspath>
-                <path refid="run.TokenizerPropertyTest2 (1).bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="TokenizerPropertyTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="TokenizerPropertyTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.TokenizerPropertyTest2.classpath"/>
-            <bootclasspath>
-                <path refid="run.TokenizerPropertyTest2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="TokenSuite">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.TokenSuite" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.TokenSuite.classpath"/>
-            <bootclasspath>
-                <path refid="run.TokenSuite.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="TokenTest1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.TokenTest1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.TokenTest1.classpath"/>
-            <bootclasspath>
-                <path refid="run.TokenTest1.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="TokenTest2">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="Testcases.TokenTest2" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.TokenTest2.classpath"/>
-            <bootclasspath>
-                <path refid="run.TokenTest2.bootclasspath"/>
-            </bootclasspath>
-        </junit>
-    </target>
-    <target name="junitreport">
-        <junitreport todir="${junit.output.dir}">
-            <fileset dir="${junit.output.dir}">
-                <include name="TEST-*.xml"/>
-            </fileset>
-            <report format="frames" todir="${junit.output.dir}"/>
-        </junitreport>
-    </target>
+  <path id="project.sourcepath">
+    <pathelement path="${src.dir}"/>
+    <pathelement path="${junit.dir}"/>
+  </path>
+  
+  <!-- Target: help -->
+  <target name="help">
+    <echo message="The following targets are available:"/>
+    <echo message="  prepare:       setup destination directory structure &apos;${build.dir}&apos;"/>
+    <echo message="  clean:         remove destination directory structure &apos;${build.dir}&apos;"/>
+    <echo message="  compile:       DEFAULT - compile the java sources into .class files"/>
+    <echo message="  compile_junit: compile the JUnit test cases"/>
+    <echo message="                 (You need to have the junit archive in Your CLASSPATH)"/>
+    <echo message="  javadoc:       generate Java API documentation into ${javadoc.dir}"/>
+    <echo message="  jar:           build all jar archives (jar_all + jar_core + jar_compat + jar_junit)"/>
+    <echo message="  jar_junit:     archive the compiled test classes into ${JTopas-JTLib}.jar"/>
+    <echo message="  all:           build all targets shown above"/>
+    <echo message=" "/>
+    <echo message="Special deployment targets:"/>
+    <echo message="  archive:       make target &apos;all&apos; and build a tar&apos;ed and gnu-zipped archive(.tgz)"/>
+    <echo message="  archive_only:  build a tar&apos;ed and gnu-zipped archive(.tgz)"/>
+    <echo message=" "/>
+    <echo message="Special targets for CVS:"/>
+    <echo message="  checkin:       commit checked-out source files into the repository"/>
+    <echo message="  checkout:      checkout sources from the repository"/>
+    <echo message="  export:        get a copy of the current version from the repository"/>
+    <echo message=" "/>
+    <echo message="Running test cases:"/>
+    <echo message="  run_junit:     run the test cases (use -Dmain.class and -Djunit.ui to customize)"/>
+  </target>
+
+  <!-- Target: prepare -->
+  <target name="prepare">
+    <mkdir dir="${build.dir}"/>
+    <mkdir dir="${classes.dir}"/>
+    <mkdir dir="${lib.dir}"/>
+    <mkdir dir="${doc.dir}"/>
+    <mkdir dir="${javadoc.dir}"/>
+  </target>
+
+  <!-- Target: clean -->
+  <target name="clean">
+    <delete dir="${build.dir}"/>
+  </target>
+
+  <!-- Target: compile -->
+  <target name="compile" depends="prepare">
+    <doCompile sourcepath.root="${src.dir}" compile.debug="${context.debug}"/>
+  </target>
+
+  <!-- Target: compile_junit -->
+  <target name="compile_junit" depends="compile">
+    <doCompile sourcepath.root="${junit.dir}" compile.debug="${context.debug}"/>
+  </target>
+
+  <!-- Target: javadoc -->
+  <target name="javadoc" depends="prepare">
+    <javadoc author="true" 
+	     bottom="Copyright 2001 - 2004 Heiko Blau. All rights reserved." 
+	     destdir="${javadoc.dir}" 
+	     packagenames="de.susebox.*" 
+	     sourcepath="${src.dir}" 
+	     splitindex="true" 
+	     use="true" 
+	     version="true" 
+	     windowtitle="JTopas - Java tokenizer and parser tools"/>
+  </target>
+
+  <!-- Target: jar -->
+  <target name="jar" depends="compile">
+    <doJar jar.name="${JTopasLib}" pattern.id="src.pattern"/>
+  </target>
+
+  <!-- Target: jar_junit -->
+  <target name="jar_junit" depends="compile_junit">
+    <doJar jar.name="${JTopas-JTLib}" pattern.id="junit.pattern"/>
+  </target>
+
+  <!-- Target: run_junit -->
+  <target name="run_junit" depends="jar,jar_junit">
+    <java classname="${main.class}" fork="true" maxmemory="128m" failonerror="true">
+      <classpath>
+        <path refid="project.classpath"/>
+        <pathelement location="${junit.dir}"/>
+      </classpath>
+      <arg value="${junit.ui}"/>
+    </java>
+  </target>
+
+  <!-- Target: all -->
+  <target name="all" depends="jar,jar_junit"/>
+
+  <!-- Target: archive_only -->
+  <target name="archive_only" depends="all">
+    <tar basedir=".." includes="jtopas/**" excludes="**/*.class,**/*~,**/.*,**/CVS/*,**/CVSROOT/*,**/CVSROOT,**/deploy.sh" tarfile="../${archive.name}.tar"/>
+    <gzip src="../${archive.name}.tar" zipfile="../${archive.name}.tar.gz"/>
+    <delete file="../${archive.name}.tar"/>
+  </target>
+
+
+  <!-- Target: archive -->
+  <target name="archive" depends="all,archive_only"/>
+
+  <!-- Target: checkout -->
+  <target name="checkout">
+    <cvs dest="." package="${CVSModule}"/> 
+  </target>
+
+  <!-- Target: checkin -->
+  <target name="checkin">
+    <cvs command="commit"/> 
+  </target>
+
+  <!-- Target: export -->
+  <target name="export">
+    <cvs command="export ${export.tag}" dest="${export.dir}" package="${CVSModule}"/> 
+  </target>
+
+
+  <!-- ================================
+       Targets for the NetBeans 4.0 IDE
+       ================================ -->
+    
+  <!-- Target: debug -->
+  <target name="debug" depends="compile" if="netbeans.home" description="Debug Project">   
+    <nbjpdastart  name="${main.class}" 
+                  addressproperty="jpda.address" 
+                  transport="dt_socket">     
+      <classpath refid="project.classpath.debug"/>
+      <sourcepath refid="project.sourcepath"/>
+    </nbjpdastart>   
+    <java fork="true" classname="${main.class}">     
+      <jvmarg value="-Xdebug"/>     
+      <jvmarg value="-Xnoagent"/>     
+      <jvmarg value="-Djava.compiler=none"/>     
+      <jvmarg value="-Xrunjdwp:transport=dt_socket,address=${jpda.address}"/>     
+      <classpath refid="project.classpath.debug"/>
+    </java> 
+  </target>
+
+  <!-- Target compile-single -->
+  <target name="compile-single-src" depends="prepare" if="netbeans.home">
+    <fail unless="compile.src.files">Must set property 'compile.src.files'</fail>
+    <doCompile sourcepath.root="${src.dir}" compile.files="${compile.src.files}" compile.debug="on"/>
+  </target>
+
+  <target name="compile-single-junit" depends="prepare" if="netbeans.home">
+    <fail unless="compile.junit.files">Must set property 'compile.junit.files'</fail>
+    <doCompile sourcepath.root="${junit.dir}" compile.files="${compile.junit.files}" compile.debug="on"/>
+  </target>
+  
+  <target name="debug-single" depends="jar, jar_junit" if="netbeans.home">
+    <fail unless="debug.classname">Must set property 'debug.classname'</fail>
+    <nbjpdastart name="${debug.classname}" addressproperty="jpda.address" transport="dt_socket">
+      <classpath  refid="project.classpath"/>
+      <sourcepath refid="project.sourcepath"/>
+    </nbjpdastart>
+    <java classname="${debug.classname}" fork="true">
+      <jvmarg value="-Xdebug"/>
+      <jvmarg value="-Xnoagent"/>
+      <jvmarg value="-Djava.compiler=none"/>
+      <jvmarg value="-Xrunjdwp:transport=dt_socket,address=${jpda.address}"/>
+      <classpath refid="project.classpath"/>
+    </java>
+  </target>
+  
+
+  <!-- ================================
+       MacroDefs
+       ================================ -->
+    
+  <!-- Macro: doJar - Building jar files -->
+  <macrodef name="doJar">
+    <attribute name="jar.name"    description="Name for the java archive to build in ${lib.dir}"/>
+    <attribute name="pattern.id"  description="Id of a pattern set for the class files to include/exclude"/>
+    <sequential>
+      <tstamp>
+        <format property="timestamp.display" pattern="dd.MM.yyyy, HH:mm:ss,SSS"/>
+        <format property="timestamp.version" pattern="yyyyMMDddHHmmss"/>
+      </tstamp>
+      <jar jarfile="${lib.dir}/@{jar.name}.jar">
+        <manifest>
+          <attribute name="Specification-Title"    value="${ant.project.name}"/>
+          <attribute name="Specification-Version"  value="${project.version}"/>
+          <attribute name="Specification-Vendor"   value="Susebox"/>
+          <attribute name="Implementation-Title"   value="${ant.project.name}"/>
+          <attribute name="Implementation-Version" value="${project.version}/${timestamp.version}/${java.version}"/>
+          <attribute name="Implementation-Vendor"  value="Susebox"/>
+          <attribute name="Built-By"               value="${user.name} on ${os.name} ${os.version} (${os.arch})"/>
+          <attribute name="Built-Time"             value="${timestamp.display}"/>
+        </manifest>
+        <fileset dir="${classes.dir}">
+          <patternset refid="@{pattern.id}"/>
+        </fileset>
+      </jar>
+    </sequential>
+  </macrodef>
+  
+  <!-- Macro: doCompile - compiling files given via a pattern -->
+  <macrodef name="doCompile">
+    <attribute name="sourcepath.root" description="Pattern for the source root directories."/>
+    <attribute name="compile.files"   description="Pattern for the files to compile." default="**/*.java"/>
+    <attribute name="classpath.id"    description="ID of a path-like structure (see Ant manual) for the class dirs / jar files to use for compilation." default="project.classpath"/>
+    <attribute name="compile.debug"   description="Debug switch for the compiler (Ant boolean)." default="off"/>
+    <sequential>
+      <javac  deprecation="on" 
+              srcdir="@{sourcepath.root}" 
+              destdir="${classes.dir}" 
+              includes="@{compile.files}"
+              debug="@{compile.debug}">
+        <classpath  refid="@{classpath.id}"/>
+      </javac>
+    </sequential>
+  </macrodef>
+
 </project>
